@@ -99,5 +99,4 @@ Rails.application.configure do
     domain: ENV['SENDGRID_DOMAIN'],
     authentication: :plain
   }
-
 end
