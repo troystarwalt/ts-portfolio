@@ -1,0 +1,25 @@
+nav {
+  background: transparent;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  .logo {
+    background: blue;
+    padding: 25px;
+  }
+  ul {
+    display: flex;
+    background: grey;
+    list-style: none;
+    list-style-image: none;
+    margin: 0;
+    padding: 25px 0;
+    li {
+      text-align: center;
+      padding: 0 25px;
+    }
+  }
+}
