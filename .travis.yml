@@ -3,7 +3,7 @@ cache: bundler
 rvm:
   - 2.4.1
 before_install:
-  - nvm instlal node
+  - nvm install node
   - npm install yarn
 before_script:
   - bin/setup
