@@ -2,12 +2,14 @@ language: ruby
 cache: bundler
 rvm:
   - 2.4.1
-before_install:
+install:
+  - bundle install
   - nvm install node
-  - npm install yarn
+  - node -v
+  - npm i -g yarn
+  - yarn
 before_script:
   - bin/setup
-
 script:
   - bundle exec rake
   - bundle exec brakeman -z
