@@ -1,0 +1,11 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title TsPortfolio
+    = csrf_meta_tags
+    = stylesheet_pack_tag 'application'
+    %meta{:content => "width=device-width, initial-scale=1, minimum-scale=1", :name => "viewport"}/
+  %body
+    = yield
+    = javascript_pack_tag 'application'

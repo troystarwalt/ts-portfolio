@@ -33,6 +33,9 @@ gem 'devise', '~> 4.3.0'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+# HAML for templeting
+gem "haml-rails", "~> 0.9"
+
 group :test do
   gem 'codecov', :require => false
 end
