@@ -11,5 +11,4 @@ RSpec.feature 'Visiting root route' do
     visit '/'
     expect(page).to have_selector('h1')
   end
-
 end

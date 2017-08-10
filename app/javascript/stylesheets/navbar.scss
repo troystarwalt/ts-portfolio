@@ -1,3 +1,5 @@
+@import 'variables';
+
 nav {
   background: transparent;
   width: 100%;
@@ -7,7 +9,7 @@ nav {
   top: 0;
   z-index: 1;
   .logo {
-    background: blue;
+    background: $main-bg;
     padding: 25px;
   }
   ul {

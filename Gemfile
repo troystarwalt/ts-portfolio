@@ -34,7 +34,7 @@ gem 'devise', '~> 4.3.0'
 # gem 'capistrano-rails', group: :development
 
 # HAML for templeting
-gem "haml-rails", "~> 0.9"
+gem "haml-rails", "~> 1.0"
 
 group :test do
   gem 'codecov', :require => false
