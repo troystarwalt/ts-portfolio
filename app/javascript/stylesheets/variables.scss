@@ -1,6 +1,8 @@
 // Variables
 
+//
 // Colors
+//
 $deep-red: #cb2d3e;
 $orange-red: #ef473a;
 $dark-grey: #242423;
@@ -8,9 +10,22 @@ $white: #fcfcfc;
 $white-grey: #eaeaea;
 
 
-// Background
+// Background Colors
 $main-bg: $orange-red;
 
 // Font Colors
+$main-font-color: $dark-grey;
 
-$main-font: $dark-grey;
+//
+// Spacing
+//
+$header-padding-top: 120px;
+
+//
+// Fonts
+//
+$main-font: 'Open Sans', sans-serif;
+$heading-font: 'Montserrat', sans-serif;
+$black-font-weight: 900;
+$regular-font-weight: 400;
+$light-font-weight: 300;

@@ -1,7 +1,16 @@
 @import 'variables';
+
 header {
   background: $deep-red;  // fallback for old browsers
   background: linear-gradient(to right, $orange-red, $deep-red); //W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+
-  color: white;
-  padding-top: 120px;
+  color: $white;
+  height: calc(100vh - #{$header-padding-top});
+  padding-top: $header-padding-top;
+}
+
+h1 {
+  font-family: $heading-font;
+  font-size: 3.5em;
+  font-weight: $black-font-weight;
+  letter-spacing: .2rem;
 }

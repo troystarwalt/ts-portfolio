@@ -1,19 +1,23 @@
 %header
-  %h1 Troy Starwalt
-  %p Full Stack Web Developer
-  .photo
-    =image_tag("troy-starwalt.jpg", class: "responsive")
-  .sorry
-    %p.subuded
-      Sorry for the mustache, but it's for a good
-      = succeed '.' do
-        %a{:href => "https://us.movember.com/"}cause
+  .container
+    %h1 Troy Starwalt
+    %p Full Stack Web Developer
 %section#work
-  .work
-    %h2 work
+  .container
+    .work
+      %h2 work
 %section#projects
-  .projects
-    %h2 projects
+  .container
+    .projects
+      %h2 projects
 %section#who
-  .about
-    %h2 who am i?
+  .container
+    .about
+      %h2 who am i?
+    .photo
+      =image_tag("troy-starwalt.jpg", class: "responsive")
+    .sorry
+      %p.subuded
+        Sorry for the mustache, but it's for a good
+        = succeed '.' do
+          %a{:href => "https://us.movember.com/"}cause
