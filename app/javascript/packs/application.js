@@ -9,5 +9,4 @@
 
 import 'normalize.css/normalize.css';
 import '../application.scss';
-import flashDismiss from '../helpers/entry';
-console.log('Hello World from Webpacker')
+import '../helpers/entry';

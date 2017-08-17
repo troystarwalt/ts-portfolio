@@ -1,23 +1,4 @@
-%header
-  .container
-    %h1 Troy Starwalt
-    %p Full Stack Web Developer
-%section#work
-  .container
-    .work
-      %h2 work
-%section#projects
-  .container
-    .projects
-      %h2 projects
-%section#who
-  .container
-    .about
-      %h2 who am i?
-    .photo
-      =image_tag("troy-starwalt.jpg", class: "responsive")
-    .sorry
-      %p.subuded
-        Sorry for the mustache, but it's for a good
-        = succeed '.' do
-          %a{:href => "https://us.movember.com/"}cause
+= render 'header'
+= render 'work'
+= render 'projects'
+= render 'who'
