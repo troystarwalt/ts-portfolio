@@ -9,4 +9,6 @@
 
 import 'normalize.css/normalize.css';
 import '../application.scss';
+import '../helpers/check_touch';
 import '../helpers/entry';
+import '../helpers/nav';

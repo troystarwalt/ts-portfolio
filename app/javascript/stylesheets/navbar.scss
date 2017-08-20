@@ -2,12 +2,13 @@
 
 nav {
   background: transparent;
-  width: 100%;
   display: flex;
   position: fixed;
   top: 0;
   z-index: 1;
-  height: 72px;
+  height: 60px;
+  text-transform: uppercase;
+  padding: 0 30px 30px 0;
   p {
     padding: 0;
     margin: 0;
@@ -16,12 +17,12 @@ nav {
       background: $main-bg;
       padding: 0 20px;
       color: $white;
-      font-size: 20px;
+      font-size: 1.25em;
     }
   }
   a {
     display: block;
-    line-height: 70px;
+    line-height: 60px;
     height: 100%;
   }
   ul {
@@ -38,8 +39,25 @@ nav {
   a:link {
     color: $deep-red;
     padding: 0 17px;
+    font-size: .9em;
     &:hover {
       color: $almost-black;
     }
+  }
+}
+
+.nav-container {
+  overflow: hidden;
+  transition: all .2s linear;
+}
+
+nav:hover .nav-container {
+  width: 245.08px;
+}
+
+// Don't hide menu on touch devices.
+nav.touch-device {
+  .nav-container {
+    width: 245.08px;
   }
 }
