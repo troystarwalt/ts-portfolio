@@ -17,18 +17,27 @@ window.onscroll = function () {
   let scroll_position_vertical = window.scrollY;
   if ( scroll_position_vertical > nav_bottom_break_point) {
     scroll_position_vertical = window.scrollY;
-    console.log('we have moved ' + scroll_position_vertical + ' from top');
-    change_class('nav-container');
-  };
+    addClass('navbar', 'closed-menu');
+  }
+  else {
+    removeClass('navbar', 'closed-menu');
+  }
 }
 
-var change_class = (ct) => {
-  var chosen_class = document.getElementsByClassName(ct);
-  for (const i in chosen_class) {
-    // Only grab the element
-    console.log(ct[i]);
-    if (i == 0) {
-      ct[i].className = 'touch-device';
-    }
+var addClass = (targetedElement, className) => {
+  var el = document.getElementById(targetedElement);
+  if (el.classList.contains(className)) {
+    return
+  }
+  else {
+    el.className += " " + className;
+  }
+}
+
+var removeClass = (targetedElement, className) => {
+  var el = document.getElementById(targetedElement);
+  if (el.classList.contains('closed-menu')) {
+    console.log('yep itsthere');
+    el.classList.remove('closed-menu');
   }
 }

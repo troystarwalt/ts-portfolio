@@ -51,6 +51,10 @@ nav {
   transition: all .2s linear;
 }
 
+.nav-container.closed-menu {
+  width: 0;
+}
+
 nav:hover .nav-container {
   width: 245.08px;
 }
@@ -58,6 +62,6 @@ nav:hover .nav-container {
 // Don't hide menu on touch devices.
 nav.touch-device {
   .nav-container {
-    width: 245.08px;
+    width: 245.08px !important;
   }
 }
