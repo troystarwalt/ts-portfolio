@@ -13,20 +13,6 @@ header {
   position: relative;
 }
 
-h1 {
-  font-family: $heading-font;
-  font-size: 3.5em;
-  font-weight: $black-font-weight;
-  letter-spacing: .2rem;
-}
-
-h2 {
-  font-family: $heading-font;
-  font-size: 1.5em;
-  font-weight: $black-font-weight;
-  letter-spacing: .1rem;
-}
-
 .social--container {
   position: absolute;
   bottom: 0;
@@ -47,5 +33,52 @@ h2 {
     &:hover {
       color: $white;
     }
+  }
+}
+
+.title--container {
+  margin: 50px 0 15px 0;
+}
+
+
+.section-title {
+  display: inline-block;
+  background: $orange-red;
+  padding: 5px 15px;
+  color: $white;
+  position: relative;
+  &::after {
+    content: '';
+    border-bottom: 1.5px solid $orange-red;
+    width: 0;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    transition: all 1s linear;
+  }
+}
+
+.section-title:hover {
+  &::after {
+    width: 112px;
+  }
+}
+
+.site-title {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.list-title {
+  // font-size: 1.5em;
+  margin-bottom: 5px;
+  font-family: $heading-font;
+}
+
+.description {
+  margin-top:10px;
+  margin-bottom: 15px;
+  .btn {
+    margin-top: 10px;
   }
 }

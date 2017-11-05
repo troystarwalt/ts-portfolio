@@ -2,18 +2,44 @@
   .container
     .work
       .title--container
-        %h2 work
-        %p Below are a few screenshots from sites I've worked on. Take a looksie.
+        %h2.section-title work
       .content--container
-        .work-img--container
-          = image_tag 'marketing-dot-xaxis-admin.png', class: 'work-img responsive'
-        .work-img--container
-          = image_tag 'marketing-dot-xaxis-brand.png', class: 'work-img responsive'
-        .work-img--container
-          = image_tag 'marketing-dot-xaxis-hub.png', class: 'work-img responsive'
-        .work-img--container
-          = image_tag 'marketing-dot-xaxis.png', class: 'work-img responsive'
-        .work-img--container
-          = image_tag 'xaxis-main-homepage.png', class: 'work-img responsive'
-        .work-img--container
-          = image_tag 'xaxis-main-results.png', class: 'work-img responsive'
+        %article
+          %h3.site-title Internal Marketing Hub
+          .site-description-container
+            %ul.description
+              %li.list-title What is it?
+              %li Internal hub that allows for on the fly content updates
+              %li
+                %a.btn.btn-trans{href: "https://marketing.xaxis.com/"} View Site
+            %ul.technologies
+              %li.list-title Tools and Technologies
+              %li Ruby on Rails
+              %li Heroku
+              %li AWS
+              %li postgresql
+              %li Active Admin
+              %li Rake generator to add one off landing pages
+          .ss-description
+            %h4.ss-title Dynamic content feed for homepage.
+            .work-img--container
+              = image_tag 'marketing-dot-xaxis.png', class: 'work-img responsive'
+          .ss-description
+            %h4.ss-title Individual brand pages that be added, removed and updated through the backend admin interface.
+            .work-img--container
+              = image_tag 'marketing-dot-xaxis-brand.png', class: 'work-img responsive'
+          .ss-description
+            %h4.ss-title Worked closely with designer to implement clean design.
+            .work-img--container
+            = image_tag 'marketing-dot-xaxis-hub.png', class: 'work-img responsive'
+          .ss-description
+            %h4.ss-title Full featured admin interface.
+            .work-img--container
+              = image_tag 'marketing-dot-xaxis-admin.png', class: 'work-img responsive'
+        %hr
+        %article
+          %h3 Corporate Marketing Site
+          .work-img--container
+            = image_tag 'xaxis-main-homepage.png', class: 'work-img responsive'
+          .work-img--container
+            = image_tag 'xaxis-main-results.png', class: 'work-img responsive'

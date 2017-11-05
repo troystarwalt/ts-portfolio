@@ -1,0 +1,11 @@
+.btn {
+  display: inline-block;
+  padding: 2px 10px;
+  border: 1px solid $almost-black;
+  text-transform: lowercase;
+  letter-spacing: 1.2pt;
+}
+
+.btn.uppercase {
+  text-transform: uppercase;
+}
